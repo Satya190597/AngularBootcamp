@@ -1,0 +1,31 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+counter-app/dist
+counter-app/tmp
+counter-app/out-tsc
+
+# Only exists if Bazel was run
+counter-app/bazel-out
+
+# dependencies
+counter-app/node_modules
+
+# IDE - VSCode
+counter-app/.vscode/*
+counter-app/!.vscode/settings.json
+counter-app/!.vscode/tasks.json
+counter-app/!.vscode/launch.json
+counter-app/!.vscode/extensions.json
+counter-app/.history/*
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+counter-app/npm-debug.log
+counter-app/yarn-error.log
+counter-app/testem.log
+counter-app/typings
+
