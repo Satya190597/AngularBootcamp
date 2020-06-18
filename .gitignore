@@ -5,11 +5,17 @@ counter-app/dist
 counter-app/tmp
 counter-app/out-tsc
 
+core-angular/dist
+core-angular/tmp
+core-angular/out-tsc
+
 # Only exists if Bazel was run
 counter-app/bazel-out
+core-angular/bazel-out
 
 # dependencies
 counter-app/node_modules
+core-angular/node_modules
 
 # IDE - VSCode
 counter-app/.vscode/*
@@ -18,6 +24,13 @@ counter-app/!.vscode/tasks.json
 counter-app/!.vscode/launch.json
 counter-app/!.vscode/extensions.json
 counter-app/.history/*
+
+core-angular/.vscode/*
+core-angular/!.vscode/settings.json
+core-angular/!.vscode/tasks.json
+core-angular/!.vscode/launch.json
+core-angular/!.vscode/extensions.json
+core-angular/.history/*
 
 # misc
 /.sass-cache
