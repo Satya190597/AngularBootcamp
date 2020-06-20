@@ -9,13 +9,19 @@ core-angular/dist
 core-angular/tmp
 core-angular/out-tsc
 
+word-generator/tmp
+word-generator/out-tsc
+
+
 # Only exists if Bazel was run
 counter-app/bazel-out
 core-angular/bazel-out
+word-generator/bazel-out
 
 # dependencies
 counter-app/node_modules
 core-angular/node_modules
+word-generator/node_modules
 
 # IDE - VSCode
 counter-app/.vscode/*
@@ -32,6 +38,13 @@ core-angular/!.vscode/launch.json
 core-angular/!.vscode/extensions.json
 core-angular/.history/*
 
+word-generator/.vscode/*
+word-generator/!.vscode/settings.json
+word-generator/!.vscode/tasks.json
+word-generator/!.vscode/launch.json
+word-generator/!.vscode/extensions.json
+word-generator/.history/*
+
 # misc
 /.sass-cache
 /connect.lock
@@ -41,4 +54,11 @@ counter-app/npm-debug.log
 counter-app/yarn-error.log
 counter-app/testem.log
 counter-app/typings
+
+word-generator/npm-debug.log
+word-generator/yarn-error.log
+word-generator/testem.log
+word-generator/typings
+
+
 
