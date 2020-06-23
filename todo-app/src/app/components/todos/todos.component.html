@@ -1,0 +1,8 @@
+<ul>
+    <li *ngFor="let todo of todos" style="color: white;"> 
+        <span><input type="checkbox" [checked]="todo.isChecked" (change)="handleCheckEvent(todo)"></span>
+        <span>{{todo.title}}</span>
+        <span>{{todo.date}}</span>
+        <span (click)="delete(todo)">Trash</span>
+    </li>
+</ul>

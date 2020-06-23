@@ -16,18 +16,24 @@ tic-tac-toe/tmp
 tic-tac-toe/dist
 tic-tac-toe/out-tsc
 
+todo-app/tmp
+todo-app/dist
+todo-app/out-tsc
+
 
 # Only exists if Bazel was run
 counter-app/bazel-out
 core-angular/bazel-out
 word-generator/bazel-out
 tic-tac-toe/bazel-out
+todo-app/bazel-out
 
 # dependencies
 counter-app/node_modules
 core-angular/node_modules
 word-generator/node_modules
 tic-tac-toe/node_modules
+todo-app/node_modules
 
 # IDE - VSCode
 counter-app/.vscode/*
@@ -51,12 +57,14 @@ word-generator/!.vscode/launch.json
 word-generator/!.vscode/extensions.json
 word-generator/.history/*
 
-tic-tac-toe/.vscode/*
-tic-tac-toe/!.vscode/settings.json
-tic-tac-toe/!.vscode/tasks.json
-tic-tac-toe/!.vscode/launch.json
-tic-tac-toe/!.vscode/extensions.json
-tic-tac-toe/.history/*
+todo-app/.vscode/*
+todo-app/!.vscode/settings.json
+todo-app/!.vscode/tasks.json
+todo-app/!.vscode/launch.json
+todo-app/!.vscode/extensions.json
+todo-app/.history/*
+
+
 
 # misc
 /.sass-cache
