@@ -21,12 +21,17 @@ todo-app/dist
 todo-app/out-tsc
 
 
+signup-reactive/tmp
+signup-reactive/dist
+signup-reactive/out-tsc
+
 # Only exists if Bazel was run
 counter-app/bazel-out
 core-angular/bazel-out
 word-generator/bazel-out
 tic-tac-toe/bazel-out
 todo-app/bazel-out
+signup-reactive/bazel-out
 
 # dependencies
 counter-app/node_modules
@@ -34,6 +39,7 @@ core-angular/node_modules
 word-generator/node_modules
 tic-tac-toe/node_modules
 todo-app/node_modules
+signup-reactive/node_modules
 
 # IDE - VSCode
 counter-app/.vscode/*
@@ -64,6 +70,13 @@ todo-app/!.vscode/launch.json
 todo-app/!.vscode/extensions.json
 todo-app/.history/*
 
+signup-reactive/.vscode/*
+signup-reactive/!.vscode/settings.json
+signup-reactive/!.vscode/tasks.json
+signup-reactive/!.vscode/launch.json
+signup-reactive/!.vscode/extensions.json
+signup-reactive/.history/*
+
 
 
 # misc
@@ -80,6 +93,11 @@ word-generator/npm-debug.log
 word-generator/yarn-error.log
 word-generator/testem.log
 word-generator/typings
+
+signup-reactive/npm-debug.log
+signup-reactive/yarn-error.log
+signup-reactive/testem.log
+signup-reactive/typings
 
 
 
