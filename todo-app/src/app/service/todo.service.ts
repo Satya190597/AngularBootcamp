@@ -5,8 +5,13 @@ import {of} from 'rxjs'
 @Injectable({
   providedIn: 'root'
 })
+
+/**
+ * TO DO SERVICE.
+ */
 export class TodoService {
 
+  // Predefine TO-DO List.
   todos: Todo[] = [{
     id:'1233',
     title:'LEARN ANGULAR',
@@ -14,10 +19,10 @@ export class TodoService {
     isComplete:false
   },
   {
-  id:'1234',
-  title:'LEARN TYPE SCRIPT',
-  date:new Date(),
-  isComplete:false
+    id:'1234',
+    title:'LEARN TYPE SCRIPT',
+    date:new Date(),
+    isComplete:false
   },
   {
     id:'1235',
@@ -26,33 +31,45 @@ export class TodoService {
     isComplete:false
   }]
 
-  constructor() { }
+  constructor() { 
+  }
 
 
+  /**
+   * Get list of todos.
+   */
   getTodos = () => {
     return of(this.todos)
   }
 
+  /**
+   * Add a new todo.
+   * @param todo 
+   */
   addTodo = (todo:Todo) => {
     this.todos.push(todo)
   }
 
+  /**
+   * Update a todo.
+   * @param todo
+   */
   updateTodo = (todo:Todo) => {
     this.todos.map(value => {
       if(value.id === todo.id) {
         return value.isComplete = !value.isComplete
       }
     })
-    console.log(todo)
-    console.log(this.todos)
   }
 
+  /**
+   * Delete a todo.
+   * @param todo 
+   */
   deleteTodo = (todo:Todo) => {
     let index = this.todos.findIndex(value => {
       return value.id === todo.id
     })
     this.todos.splice(index,1)
   }
-
-
 }

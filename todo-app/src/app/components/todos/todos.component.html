@@ -1,8 +1,8 @@
-<ul>
-    <li *ngFor="let todo of todos" style="color: white;"> 
-        <span><input type="checkbox" [checked]="todo.isChecked" (change)="handleCheckEvent(todo)"></span>
-        <span>{{todo.title}}</span>
-        <span>{{todo.date}}</span>
-        <span (click)="delete(todo)">Trash</span>
+<ul class="list-group w-100">
+    <li *ngFor="let todo of todos"  class="list-group-item d-flex justify-content-between w-100"> 
+        <span><input type="checkbox" [checked]="todo.isComplete" (change)="handleCheckEvent(todo)"></span>
+        <span [ngClass]="{completedTodo: todo.isComplete}">{{todo.title | uppercase }}</span>
+        <span [ngClass]="{completedTodo: todo.isComplete}">{{todo.date | date }}</span>
+        <fa-icon [icon]="faTrash" (click)="delete(todo)" style="color: rgb(201, 27, 27);"></fa-icon>
     </li>
 </ul>
