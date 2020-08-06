@@ -25,6 +25,11 @@ signup-reactive/tmp
 signup-reactive/dist
 signup-reactive/out-tsc
 
+random-card/tmp
+random-card/dist
+random-card/out-tsc
+
+
 # Only exists if Bazel was run
 counter-app/bazel-out
 core-angular/bazel-out
@@ -32,6 +37,7 @@ word-generator/bazel-out
 tic-tac-toe/bazel-out
 todo-app/bazel-out
 signup-reactive/bazel-out
+random-card/bazel-out
 
 # dependencies
 counter-app/node_modules
@@ -40,6 +46,8 @@ word-generator/node_modules
 tic-tac-toe/node_modules
 todo-app/node_modules
 signup-reactive/node_modules
+random-card/node_modules
+
 
 # IDE - VSCode
 counter-app/.vscode/*
@@ -77,6 +85,13 @@ signup-reactive/!.vscode/launch.json
 signup-reactive/!.vscode/extensions.json
 signup-reactive/.history/*
 
+random-card/.vscode/*
+random-card/!.vscode/settings.json
+random-card/!.vscode/tasks.json
+random-card/!.vscode/launch.json
+random-card/!.vscode/extensions.json
+random-card/.history/*
+
 
 
 # misc
@@ -98,6 +113,11 @@ signup-reactive/npm-debug.log
 signup-reactive/yarn-error.log
 signup-reactive/testem.log
 signup-reactive/typings
+
+random-card/npm-debug.log
+random-card/yarn-error.log
+random-card/testem.log
+random-card/typings
 
 
 

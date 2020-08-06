@@ -1,0 +1,20 @@
+<div class="app p4 container-fluid">
+    <div class="row">
+        <div class="col col-md-4 offset-md-4">
+            <div class="text-center">
+                <div *ngIf="user; else loadingBlock">
+                    <app-card [user]="user" ></app-card>
+                    <button class="btn btn-primary mt-5" (click)="loadUserData()">Load New User</button>
+                </div>
+                <ng-template #loadingBlock>
+                    <div class="text-center mt-5">
+                        <div class="spinner-border spinner-grow-mg text-white" role="status"></div>
+                        <div class="text-white">
+                            Loading...
+                        </div>
+                    </div>
+                </ng-template>
+            </div>
+        </div>
+    </div>
+</div>
