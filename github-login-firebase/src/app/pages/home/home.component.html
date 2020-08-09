@@ -1,0 +1,8 @@
+<div class="container">
+    <form action="" (ngSubmit)="submit()">
+        <input type="text"  [(ngModel)]="userName" name="userName">
+        <button type="submit">Search</button>
+    </form>
+</div>
+<app-user-card [user]="user"></app-user-card>
+<app-repos [repourl]="user.repos_url"></app-repos>
