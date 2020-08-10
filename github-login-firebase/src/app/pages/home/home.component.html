@@ -1,8 +1,21 @@
 <div class="container">
-    <form action="" (ngSubmit)="submit()">
-        <input type="text"  [(ngModel)]="userName" name="userName">
-        <button type="submit">Search</button>
+    <form action="" (ngSubmit)="submit()" class="form-inline mt-5 mb-5 d-flex justify-content-center">
+        <div class="form-group">
+            <label for="userName">User Name</label>
+            <input type="text"  [(ngModel)]="userName" name="userName" id="userName" class="form-control ml-2">
+            
+        </div>
+        <button type="submit" class="btn btn-primary ml-2">Search</button>
     </form>
+
+    <div class="row">
+        
+        <div class="col col-md-8">
+            <app-repos [repourl]="user.repos_url"></app-repos>
+        </div>
+        <div class="col col-md-4">
+            <app-user-card [user]="user"></app-user-card>
+        </div>
+    </div>
 </div>
-<app-user-card [user]="user"></app-user-card>
-<app-repos [repourl]="user.repos_url"></app-repos>
+

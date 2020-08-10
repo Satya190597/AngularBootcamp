@@ -34,7 +34,11 @@ export class HeaderComponent implements OnInit {
   logout() {
     this.auth.logout().then((result)=>{
       this.email = null;
-      this.router.navigateByUrl('/')
+      this.toastr.success('Logout Successfully')
+      this.router.navigateByUrl('signin')
+    })
+    .catch(error => {
+      this.toastr.error('Something went wrong.')
     })
   }
 
