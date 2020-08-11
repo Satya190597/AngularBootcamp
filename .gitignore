@@ -29,6 +29,13 @@ random-card/tmp
 random-card/dist
 random-card/out-tsc
 
+github-login-firebase/tmp
+github-login-firebase/dist
+github-login-firebase/out-tsc
+
+travelgram/tmp
+travelgram/dist
+travelgram/out-tsc
 
 # Only exists if Bazel was run
 counter-app/bazel-out
@@ -38,6 +45,8 @@ tic-tac-toe/bazel-out
 todo-app/bazel-out
 signup-reactive/bazel-out
 random-card/bazel-out
+github-login-firebase/bazel-out
+travelgram/bazel-out
 
 # dependencies
 counter-app/node_modules
@@ -47,6 +56,8 @@ tic-tac-toe/node_modules
 todo-app/node_modules
 signup-reactive/node_modules
 random-card/node_modules
+github-login-firebase/node_modules
+travelgram/node_modules
 
 
 # IDE - VSCode
@@ -92,7 +103,19 @@ random-card/!.vscode/launch.json
 random-card/!.vscode/extensions.json
 random-card/.history/*
 
+github-login-firebase/.vscode/*
+github-login-firebase/!.vscode/settings.json
+github-login-firebase/!.vscode/tasks.json
+github-login-firebase/!.vscode/launch.json
+github-login-firebase/!.vscode/extensions.json
+github-login-firebase/.history/*
 
+travelgram/.vscode/*
+travelgram/!.vscode/settings.json
+travelgram/!.vscode/tasks.json
+travelgram/!.vscode/launch.json
+travelgram/!.vscode/extensions.json
+travelgram/.history/*
 
 # misc
 /.sass-cache
@@ -119,5 +142,20 @@ random-card/yarn-error.log
 random-card/testem.log
 random-card/typings
 
+github-login-firebase/npm-debug.log
+github-login-firebase/yarn-error.log
+github-login-firebase/testem.log
+github-login-firebase/typings
+
+
+travelgram/npm-debug.log
+travelgram/yarn-error.log
+travelgram/testem.log
+travelgram/typings
+
+
+#Untrack environmental variables
+github-login-firebase/src/environments
+travelgram/src/environments
 
 
