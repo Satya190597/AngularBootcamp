@@ -42,10 +42,10 @@
                   id="name"
                   name="name"
                   placeholder="Enter Name"
-                  required                    
+                  required                                    
                   formControlName="name"/>
                   <div *ngIf="f.name.invalid && (f.name.dirty || f.name.touched || isSubmitted)">
-                    <span>Please enter your name.</span>
+                    <span class="text-danger">Please enter your name.</span>
                   </div>
                 </div>
               </div>
@@ -62,13 +62,13 @@
                   formControlName="email"/>
                   <div *ngIf="f.email.invalid && (f.email.dirty || f.email.touched || isSubmitted)">
                     <div *ngIf="f.email.errors.required">
-                      <span>Please enter your email.</span>
+                      <span class="text-danger">Please enter your email.</span>
                     </div>
                     <div *ngIf="f.email.errors.email">
-                      <span>Please enter a valid email.</span>
+                      <span class="text-danger">Please enter a valid email.</span>
                     </div>
                     <div *ngIf="f.email.errors.emailUnavailable">
-                      <span>This email id is already registered.</span>
+                      <span class="text-danger">This email id is already registered.</span>
                     </div>
                   </div>
                 </div>                
@@ -86,10 +86,10 @@
                     formControlName="password"/>
                     <div *ngIf="f.password.invalid && (f.password.touched || f.password.dirty || isSubmitted)">
                       <div *ngIf="f.password.errors.required">
-                        <span>Please enter password.</span>
+                        <span class="text-danger">Please enter password.</span>
                       </div>
                       <div *ngIf="f.password.errors.minlength">
-                        <span>Minimum length of a password is 6 character.</span>
+                        <span class="text-danger">Minimum length of a password is 6 character.</span>
                       </div>
                     </div>
                 </div>
@@ -103,14 +103,13 @@
                   id="instaId"
                   name="instaId"
                   placeholder="Enter your handle of instagram"
-                  required
                   formControlName="instaId"/>
                   <div *ngIf="f.instaId.invalid && (f.instaId.touched || f.instaId.dirty || isSubmitted)">
-                    <div *ngIf="f.instaId.required">
-                      <span>Please enter your instagram id.</span>
+                    <div *ngIf="f.instaId.errors.required">
+                      <span class="text-danger">Please enter your instagram id.</span>
                     </div>
-                    <div *ngIf="f.instaId.instaIdUnavailable">
-                      <span>Instagram id must be unique</span>
+                    <div *ngIf="f.instaId.errors.instaIdUnavailable">
+                      <span class="text-danger">Instagram id must be unique.</span>
                     </div>
                   </div>
                 </div>
@@ -127,7 +126,7 @@
                   required
                   formControlName="country"/>
                   <div *ngIf="f.country.invalid && (f.country.touched || f.country.dirty || isSubmitted)">
-                    <span>Please enter your country.</span>
+                    <span class="text-danger">Please enter your country.</span>
                   </div>
                 </div>
               </div>
@@ -144,7 +143,7 @@
                   formControlName="bio">
                   </textarea>
                   <div *ngIf="f.bio.invalid && (f.bio.touched || f.bio.dirty || isSubmitted)">
-                    <span>Bio should be less then 50 character.</span>
+                    <span class="text-danger">Bio should be less then 50 character.</span>
                   </div>
                 </div>
               </div>
