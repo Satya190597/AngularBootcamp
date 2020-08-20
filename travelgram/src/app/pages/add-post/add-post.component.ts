@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/services/auth.service';
 import {ToastrService} from 'ngx-toastr';
 import {Router} from '@angular/router';
-import {NgForm} from '@angular/forms';
 import {finalize} from 'rxjs/operators';
 import {AngularFireStorage} from '@angular/fire/storage';
 import {AngularFireDatabase} from '@angular/fire/database';
@@ -56,7 +55,7 @@ export class AddPostComponent implements OnInit {
       description: this.description,
       picture: this.picture,
       by: this.user.name,
-      instaId: this.user.instaUserName,
+      instaId: this.user.instaId,
       date: Date.now()
     })
     .then((response)=>{

@@ -1,8 +1,8 @@
 <div class="main row mt-5 mb-3">
-    <div class="col col-6">
-      <div class="card border-primary">
-        <div class="card-header bg-secondary text-large text-white text-center">
-          {{ "Add Your awesome Post" | uppercase }}
+    <div class="col col-6 offset-3">
+      <div class="card shadow">
+        <div class="card-header background-dark text-large text-white text-center">
+          {{ "Add Your awesome Post" }}
         </div>
   
         <form class="card-body" (ngSubmit)="onSubmit()">
@@ -63,7 +63,7 @@
           </div>
   
           <div class="text-center">
-            <button type="submit" class="btn btn-primary" [disabled]="!picture">
+            <button type="submit" class="btn background-dark shadow text-light" [disabled]="!picture">
               Submit Post
             </button>
           </div>

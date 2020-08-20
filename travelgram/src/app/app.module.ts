@@ -27,6 +27,8 @@ import {AngularFireStorageModule} from '@angular/fire/storage';
 import {AngularFireDatabaseModule} from '@angular/fire/database';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,

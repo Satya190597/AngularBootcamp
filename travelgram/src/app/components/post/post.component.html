@@ -1,1 +1,14 @@
-<p>post works!</p>
+<div class="card shadow">
+    <div class="card-body">
+        <img [src]="post.picture" alt="" class="img-thumbnail">
+    </div>
+    <div class="card-footer">
+        <div>
+            <span>{{post.description}}</span>
+        </div>
+        <div>
+            <fa-icon [icon]="faThumbsUp" (click)="upvotePost()" [class.liked]="true"></fa-icon>
+            <fa-icon [icon]="faThumbsDown" class="ml-3" (click)="downotePost()" [class]=""></fa-icon>
+        </div>
+    </div>
+</div>

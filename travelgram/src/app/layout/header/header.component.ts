@@ -15,16 +15,18 @@ export class HeaderComponent implements OnInit {
   constructor(
     private auth:AuthService,
     private toastr: ToastrService,
-    private router: Router 
+    private router: Router,
   ) { 
-    auth.getUser().subscribe((user)=>{
-      this.email = user.email
-    })
   }
 
   ngOnInit() {
+    this.auth.getUser().subscribe((user)=>{
+      if(user){
+        this.email = user.email        
+      }
+    })
   }
-
+  
   async handleSignOut() {
     try{
       await this.auth.logOut();
